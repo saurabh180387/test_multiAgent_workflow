@@ -7,7 +7,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import google.generativeai as genai
 import os
 
-genai.configure(api_key="AIzaSyDmGlaKcMhN2QWPpRTiUsVnNuyOJrRm1Pw")
+genai.configure(api_key="********************")
 
 print("Available models:")
 for m in genai.list_models():
