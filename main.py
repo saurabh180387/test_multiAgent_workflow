@@ -1,36 +1,3 @@
-# def route_query(user_input):
-#     if "analyze" in user_input.lower():
-#         return "worker"
-#     if "time" in user_input.lower():
-#         return "time"
-#     return "llm"
-
-
-
-# if __name__ == "__main__":
-#     print("Ask either:")
-#     print("1. Time query (e.g., 'What is the time in Bangalore?')")
-#     print("2. Data analysis (e.g., 'Analyze 10,20,30')\n")
-#     print("Type 'exit' or 'quit' to quit.\n")
-
-#     while True:
-#         user_input = input("User: ")
-
-#         # Exit condition
-#         if user_input.lower() in ["exit", "quit"]:
-#             print("Exiting...")
-#             break
-
-#         try:
-#             result = orchestrator_agent.invoke({
-#                 "messages": [("user", user_input)]
-#             })
-
-#             print("Response:", result["messages"][-1].content)
-
-#         except Exception as e:
-#             print("Error:", str(e))
-
 from agents.orchestrator_agent import orchestrator_agent
 from tools.simple_tool import get_time_info
 from agents.orchestrator_agent import worker_agent_tool
